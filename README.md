@@ -1,17 +1,17 @@
-# 🤖 News Recommendation Engine with ML Stack
+# News Recommendation Engine with ML Stack
 
 A complete news recommendation system powered by Elasticsearch, ELSER semantic search, multilingual embeddings, Claude AI, and intelligent reranking.
 
-## 🚀 Key Features
+# Key Features
 
-- **🧠 Advanced ML Stack**: ELSER, Multilingual Embeddings, Claude AI, Reranking
-- **📡 RSS Crawling**: Automatic news ingestion with proper content extraction
-- **🔄 Real Vectorization**: Proper ML ingest pipeline with sparse and dense vectors
-- **👥 Dynamic User Profiles**: Real-time interest modification and personalization
-- **🎯 AI Recommendations**: Claude-powered intelligent content selection
-- **🌐 Interactive Demo UI**: Web interface for testing and demonstration
+- ** Advanced ML Stack**: ELSER, Multilingual Embeddings, Claude AI, Reranking
+- ** RSS Crawling**: Automatic news ingestion with proper content extraction
+- ** Real Vectorization**: Proper ML ingest pipeline with sparse and dense vectors
+- ** Dynamic User Profiles**: Real-time interest modification and personalization
+- ** AI Recommendations**: Claude-powered intelligent content selection
+- ** Interactive Demo UI**: Web interface for testing and demonstration
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -33,13 +33,13 @@ A complete news recommendation system powered by Elasticsearch, ELSER semantic s
                        └─────────────────┘
 ```
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - **Python 3.8+**
 - **Elasticsearch Cloud Instance** with inference endpoints configured
 - **Internet connection** for RSS feed access
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone and Install
 
@@ -113,13 +113,13 @@ python main.py --web
 
 ### Web UI Features:
 
-- **📊 System Status**: Real-time monitoring of ML stack
-- **👥 User Management**: Dynamic interest modification
-- **🎯 AI Recommendations**: Claude-powered content selection  
-- **📰 Content Crawling**: Real-time news ingestion
-- **🔧 System Controls**: Full system management
+- ** System Status**: Real-time monitoring of ML stack
+- ** User Management**: Dynamic interest modification
+- ** AI Recommendations**: Claude-powered content selection  
+- ** Content Crawling**: Real-time news ingestion
+- ** System Controls**: Full system management
 
-## 📚 Usage Guide
+##  Usage Guide
 
 ### Command Line Interface
 
@@ -353,72 +353,8 @@ python main.py --users
 python main.py --articles
 ```
 
-## 🚀 Advanced Usage
 
-### Custom User Creation
-
-```python
-from user_profiles import UserProfileManager
-from elasticsearch_client import ElasticsearchClient
-
-es_client = ElasticsearchClient()
-user_manager = UserProfileManager(es_client)
-
-user_data = {
-    "name": "Custom User",
-    "interests": ["technology", "ai", "science"],
-    "additional_keywords": ["machine learning", "research"],
-    "preferred_sources": ["ABS-CBN"]
-}
-
-user_id = user_manager.create_user_profile(user_data)
-```
-
-### Direct API Usage
-
-```python
-from recommendation_engine import NewsRecommendationEngine
-
-engine = NewsRecommendationEngine(es_client, user_manager)
-recommendations = engine.generate_personalized_recommendations(user_id)
-```
-
-### Search Testing
-
-```python
-# Test hybrid search
-articles = es_client.hybrid_search(
-    query="artificial intelligence", 
-    user_interests=["technology", "innovation"],
-    size=10
-)
-```
-
-## 📝 Development Notes
-
-### File Structure
-```
-news-recommendation-engine/
-├── config.py                 # Configuration management
-├── elasticsearch_client.py   # ML-powered Elasticsearch client
-├── rss_crawler.py           # RSS crawling and content extraction
-├── user_profiles.py         # Dynamic user profile management
-├── recommendation_engine.py # AI-powered recommendation engine
-├── web_app.py              # Flask web interface
-├── main.py                 # Main application orchestrator
-├── requirements.txt        # Python dependencies
-├── .env                   # Environment configuration
-└── README.md             # This file
-```
-
-### Key Design Principles
-- **ML-First Approach**: Proper vectorization at ingestion time
-- **Dynamic Personalization**: Real-time user interest modification
-- **Fallback Strategies**: Graceful degradation when ML components fail
-- **Performance Focus**: Optimized for real-world usage patterns
-- **Demo-Ready**: Interactive web UI for easy demonstration
-
-## 🤝 Contributing
+## Contributing
 
 This is a demonstration system showcasing modern ML-powered search and recommendation capabilities. Key areas for enhancement:
 
@@ -428,7 +364,7 @@ This is a demonstration system showcasing modern ML-powered search and recommend
 - A/B testing framework for recommendation strategies
 - Extended analytics and monitoring capabilities
 
-## 📄 License
+## License
 
 This project is intended for demonstration and educational purposes.
 
