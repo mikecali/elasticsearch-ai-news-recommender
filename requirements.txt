@@ -1,0 +1,10 @@
+elasticsearch
+feedparser
+requests
+beautifulsoup4
+urllib3
+flask
+flask-cors
+python-dotenv
+python-dateutil
+schedule
