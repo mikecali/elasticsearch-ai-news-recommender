@@ -27,7 +27,7 @@ A complete news recommendation system powered by Elasticsearch, ELSER semantic s
                        │ Recommendation  │
                        │     Engine      │
                        │                 │
-                       │ • Personalization│
+                       │ • Personalized  │
                        │ • Reranking     │
                        │ • Analytics     │
                        └─────────────────┘
