@@ -5,7 +5,7 @@ A complete news recommendation system powered by Elasticsearch, ELSER semantic s
 # Key Features
 
 - ** Advanced ML Stack**: ELSER, Multilingual Embeddings, Claude AI, Reranking
-- ** RSS Crawling**: Automatic news ingestion with proper content extraction
+- ** Web Crawling**: Automatic news ingestion with proper content extraction
 - ** Real Vectorization**: Proper ML ingest pipeline with sparse and dense vectors
 - ** Dynamic User Profiles**: Real-time interest modification and personalization
 - ** AI Recommendations**: Claude-powered intelligent content selection
@@ -15,7 +15,7 @@ A complete news recommendation system powered by Elasticsearch, ELSER semantic s
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   RSS Crawler   │────│  Elasticsearch  │────│   Claude AI     │
+│   Web Crawler   │────│  Elasticsearch  │────│   Claude AI     │
 │                 │    │                 │    │                 │
 │ • Content Prep  │    │ • ELSER Vectors │    │ • Intelligence  │
 │ • Category Inf. │    │ • Dense Vectors │    │ • Reasoning     │
@@ -37,7 +37,7 @@ A complete news recommendation system powered by Elasticsearch, ELSER semantic s
 
 - **Python 3.8+**
 - **Elasticsearch Cloud Instance** with inference endpoints configured
-- **Internet connection** for RSS feed access
+- **Internet connection** for Web News feed access
 
 ##  Setup Instructions
 
@@ -69,7 +69,7 @@ Required configuration:
 ES_CLOUD_ID=your_cloud_id_here
 ES_API_KEY=your_api_key_here  
 ES_BASE_URL=your_elasticsearch_url_here
-RSS_URL=https://www.abs-cbn.com/rss/mobile/latest-news
+Web News_URL=http://abs-cbn.com/news
 LOG_LEVEL=INFO
 ```
 
@@ -272,8 +272,8 @@ ES_CLOUD_ID=your_cluster_cloud_id
 ES_API_KEY=your_api_key
 ES_BASE_URL=your_elasticsearch_base_url
 
-# RSS Feed Settings
-RSS_URL=https://www.abs-cbn.com/rss/mobile/latest-news
+# Web News Feed Settings
+News_URL=https:[optional news-link]
 CRAWL_INTERVAL=300
 
 # Application Settings  
@@ -325,9 +325,9 @@ python main.py --setup
 - System falls back to ML-only recommendations
 
 #### "No articles found"
-- Check RSS feed accessibility
+- Check news feed accessibility
 - Verify network connectivity
-- RSS will fall back to enhanced mock articles
+- News Feed will fall back to enhanced mock articles
 
 ### Debug Mode
 
